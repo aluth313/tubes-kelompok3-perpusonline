@@ -3,13 +3,12 @@ var path = require("path");
 
 var app = express();
 
+app.use(express.static('public'));
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", function(request, response) {
-	response.render("index", {
-		message: "Hey Everyone! This is my webpage."
-	});
+	response.render('sites/index');
 });
 
 app.listen(3000, () => {
