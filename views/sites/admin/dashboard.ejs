@@ -1,7 +1,7 @@
+<!-- import data header -->
 <%- include ('../../partials/admin/header') -%>
 
-<title>Home</title>
-
+<title>Dashboard</title>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -20,6 +20,9 @@
       </div>
     </div><!-- /.container-fluid -->
   </section>
+
+
+
   <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
@@ -30,12 +33,16 @@
             <div class="inner">
               <!-- mencetak data yang dikirim app.js -->
               <h3><%= buku %></h3>
+
               <p>Total Buku</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-book"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas faarrow-circle-right"></i></a>
+
+
+
           </div>
         </div>
         <!-- ./col -->
@@ -50,7 +57,10 @@
             <div class="icon">
               <i class="ion ion-usb"></i>
             </div>
+
             <a href="#" class="small-box-footer">More info <i class="fas faarrow-circle-right"></i></a>
+
+
           </div>
         </div>
         <!-- ./col -->
@@ -60,12 +70,15 @@
             <div class="inner">
               <!-- mencetak data yang dikirim app.js -->
               <h3><%= anggota %></h3>
+
               <p>Total Anggota</p>
             </div>
             <div class="icon">
               <i class="ion ion-person"></i>
             </div>
+
             <a href="#" class="small-box-footer">More info <i class="fas faarrow-circle-right"></i></a>
+
           </div>
         </div>
         <!-- ./col -->
@@ -74,23 +87,31 @@
           <div class="small-box bg-danger">
             <div class="inner">
               <!-- mencetak data yang dikirim app.js -->
+
               <h3><%= peminjaman %></h3>
               <p>Total Peminjaman</p>
+
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
+
             <a href="#" class="small-box-footer">More info <i class="fas faarrow-circle-right"></i></a>
+
           </div>
         </div>
         <!-- ./col -->
       </div>
     </div>
+
+
     <!-- /.row -->
   </section>
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
 <!-- import data footer -->
+
 
 <%- include ('../../partials/admin/footer') -%>
