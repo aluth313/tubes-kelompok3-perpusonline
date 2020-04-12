@@ -11,6 +11,10 @@ app.get("/", function(request, response) {
 	response.render('sites/index');
 });
 
+app.get("/admin", function(request, response) {
+	response.render('sites/admin/dashboard');
+});
+
 app.listen(3000, () => {
 	console.log('Server Started');
 });
