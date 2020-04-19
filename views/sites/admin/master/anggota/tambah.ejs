@@ -62,32 +62,42 @@
                         <textarea class="form-control" name="alamatAnggota" rows="3" placeholder="Enter ..."></textarea>
                     </div>
                 </div>
+
+
                 <div class="col-sm-7">
-                    <!-- text input -->
+                    <!-- radio -->
                     <div class="form-group">
                         <label>Jenis Kelamin</label>
-                        <input type="text" class="form-control" name="jkAnggota" placeholder="Enter ...">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="Laki-laki" name="jkAnggota" checked>
+                            <label class="form-check-label">Laki-laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="Perempuan" name="jkAnggota">
+                            <label class="form-check-label">Perempuan</label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-7">
-                    <!-- text input -->
-                    <div class="form-group">
-                        <label>Kota Lahir</label>
-                        <input type="text" class="form-control" name="klAnggota" placeholder="Enter ...">
-                    </div>
+            </div>
+            <div class="col-sm-7">
+                <!-- text input -->
+                <div class="form-group">
+                    <label>Kota Lahir</label>
+                    <input type="text" class="form-control" name="klAnggota" placeholder="Enter ...">
                 </div>
-                <div class="col-sm-7">
-                    <!-- text input -->
-                    <div class="form-group">
-                        <label>Tanggal Lahir</label>
-                        <input type="date" class="form-control" name="tlAnggota" placeholder="Enter ...">
-                    </div>
+            </div>
+            <div class="col-sm-7">
+                <!-- text input -->
+                <div class="form-group">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" class="form-control" name="tlAnggota" placeholder="Enter ...">
                 </div>
-                <div class="col-sm-7">
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
+            </div>
 
         </form>
     </div>
