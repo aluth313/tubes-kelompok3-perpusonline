@@ -1,0 +1,86 @@
+<%- include ('../../../../partials/admin/header') -%>
+
+<title>Home</title>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Tambah Peminjaman</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Blank Page</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <div class="card-body">
+        <form role="form" action="/admin/peminjaman/tambah" method="POST">
+            <div class="row">
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>Tanggal Peminjaman</label>
+                        <input type="date" class="form-control" name="pemPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>Tanggal Pengembalian</label>
+                        <input type="date" class="form-control" name="pengPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>Status</label>
+                        <input type="text" class="form-control" name="statusPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>NIP</label>
+                        <input type="text" class="form-control" name="nipPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>ISBN</label>
+                        <input type="text" class="form-control" name="isbnPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label>No Registrasi</label>
+                        <input type="number" class="form-control" name="regPinjam" placeholder="Enter ...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7">
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<!-- import data footer -->
+
+<%- include ('../../../../partials/admin/footer') -%>
