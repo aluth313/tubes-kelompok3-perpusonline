@@ -2,6 +2,7 @@
 var express = require("express");
 var path = require("path");
 var app = express();
+const sequelize = require('./configs/sequelize');
 
 const bodyParser = require('body-parser');
 app.use(express.static('public'));
@@ -49,5 +50,6 @@ app.use('/admin', detailRoutes);
 
 //port
 app.listen(3000, () => {
+	sequelize.sync();
 	console.log('Server Started');
 });
